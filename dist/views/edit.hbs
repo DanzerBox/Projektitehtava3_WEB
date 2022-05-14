@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row">
+
+    <!--Taulukko josta pääset muokkamaan tai korjamaan olemassa olevan tehtävän taulukosta-->
+    <div class="col-md-5 offset-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h1>Edit your task!</h1>
+
+          <form action="/tasks/{{task._id}}/edit" method="post">
+            <div class="mb-3">
+              <input
+                class="form-control"
+                type="text"
+                name="title"
+                placeholder="Change it.."
+                value="{{task.title}}"
+              />
+            </div>
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                name="description"
+                rows="3"
+                placeholder="Describe.."
+              >{{task.description}}</textarea>
+            </div>
+            <button class="btn btn-dark" type="submit">Confirm</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

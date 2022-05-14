@@ -1,0 +1,32 @@
+<div class="card card-body p-4 rounded-0 bg-white text-dark">
+  <h3>Add A New Task</h3>
+  <form action="/tasks/add" method="post">
+
+    {{! Lisätään otsikko tai asia }}
+    <div class="mb-3">
+      <label for="title">Write a tasks title:</label>
+      <input
+        id="title"
+        class="form-control rounded-0 bg-white "
+        type="text"
+        name="title"
+        placeholder="Hmm.."
+        autofocus
+      />
+    </div>
+
+    {{! Kerrotaan asiasta lisää infoa }}
+    <div class="mb-3">
+      <label for="description">Describe you task:</label>
+      <textarea
+        class="form-control rounded-0 bg-white "
+        name="description"
+        cols="80"
+        placeholder="Write something.."
+      ></textarea>
+    </div>
+
+{{! Lisää nappi, joka toimittaa tiedot taulukkoon}}
+    <button class="btn btn-dark" type="submit">Add new task</button>
+  </form>
+</div>
