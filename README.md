@@ -1,4 +1,4 @@
-# Sovellusprojekti Nodejs, Express ja Mongodb
+# Sovellusprojekti 3 Nodejs, Express ja Mongodb
 
 ![](docs/screenshot.png)
 
